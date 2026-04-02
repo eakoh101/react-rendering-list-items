@@ -1,12 +1,12 @@
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 500;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgb(rgb(110, 91, 91), rgb(30, 32, 30), blue);
+  background-color: firebrick;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

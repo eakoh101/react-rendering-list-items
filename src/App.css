@@ -1,0 +1,75 @@
+/* จัดการหน้าจอหลัก */
+.App {
+  background-color: #f5f7fa; /* สีพื้นหลังอ่อนๆ แบบในรูป */
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+/* หัวข้อ */
+.app-heading {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* ส่วนแสดงรายการหนัง */
+.movie-list-section {
+  max-width: 500px; /* บีบให้แคบลงเหมือนใน Figma */
+  margin: 0 auto;
+}
+
+
+/* รูปภาพ */
+.movie-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;     /* รูปไม่เบี้ยว */
+  border-radius: 8px;
+}
+
+
+.movie-title {
+
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* ป้าย Genres */
+
+
+.genre-tag {
+  background-color: #ffedea; /* สีส้มอ่อน */
+  color: #ff4d4f;            /* ตัวหนังสือสีเข้ม */
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+/* 1. แก้ไขส่วน Details ให้บังคับเรียงลงมาข้างล่าง */
+.movie-details {
+  display: flex;
+  flex-direction: column; /* สำคัญที่สุด! ต้องเป็น column */
+  justify-content: center; /* จัดให้อยู่กึ่งกลางแนวตั้งของรูป */
+  gap: 6px;               /* ระยะห่างแต่ละบรรทัด */
+  text-align: left;       /* บังคับให้ชิดซ้าย */
+  flex: 1;                /* ให้พื้นที่ที่เหลือทั้งหมดเป็นของส่วนข้อมูล */
+}
+
+/* 2. เช็คตัว Card หลักให้จัดของไว้ด้านบนเสมอ */
+.movie-card {
+  display: flex;
+  align-items: center;    /* จัดรูปกับข้อมูลให้อยู่กึ่งกลางแนวนอนขนานกัน */
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+/* 3. ปรับ Genre Container ไม่ให้ไปดันที่ว่าง */
+.genre-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 8px;
+  margin-top: 4px;
+}
